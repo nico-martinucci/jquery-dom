@@ -74,7 +74,14 @@
 </div>
 <script src="https://unpkg.com/jquery"></script>
 <script>
-  // Add your code here!
+  $("img").addClass("image-center");
+  $(".col-sm-8 p").last().remove();
+  const randomSize = Math.floor(Math.random() * 100);
+  $("h1").css("font-size", randomSize);
+  const $listItem = $("<li>").text("Whatever you want!!!!!!");
+  $("ol").append($listItem);
+  const $newPara = $("<p>").text("Sorry for that terrible list.");
+  $("aside").empty().append($newPara);
 </script>
 </body>
 
