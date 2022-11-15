@@ -82,6 +82,13 @@
   $("ol").append($listItem);
   const $newPara = $("<p>").text("Sorry for that terrible list.");
   $("aside").empty().append($newPara);
+
+  $("div input").change(function() {
+    let $rgbs = $("input").get();
+    let rgba = `rgb(${$rgbs[0].value},${$rgbs[2].value},
+    ${$rgbs[1].value})`;
+    $('body').css("background-color", rgba);
+  })
 </script>
 </body>
 
