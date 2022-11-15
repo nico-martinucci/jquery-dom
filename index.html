@@ -89,6 +89,10 @@
     ${$rgbs[1].value})`;
     $('body').css("background-color", rgba);
   })
+
+  $("img").on("click", event => {
+    $(event.target).remove();
+  })
 </script>
 </body>
 

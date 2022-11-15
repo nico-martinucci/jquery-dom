@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rate your movie!</h1>
+    <form action="">
+        <label for="movie-name">Movie Title:
+            <input type="text" name="movie-name" id="movie-name">
+        </label>
+        <p></p>
+        <label for="movie-rating">Movie Rating:
+            <input type="range" min="1" max="10" name="movie-rating" id="movie-rating">
+            <span id="rating-display"></span>
+        </label>
+        <p></p>
+        <button id="submit">Submit!</button>
+    </form>
+    <div id="ratings">
+        <h2>Your ratings:</h2>
+        <ul id="rating-list">
+        </ul>
+    </div>
+    <script src="movies.js"></script>
+</body>
+</html>
